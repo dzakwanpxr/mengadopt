@@ -1,0 +1,227 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+}
+
+header {
+  display: inline;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10px;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.654);
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
+  padding-right: 100px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #000;
+  font-weight: 900;
+}
+
+.nav-item.active {
+  text-decoration: underline;
+}
+
+.paw-icon {
+  width: 50px;
+  height: 50px;
+  font-weight: 900;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 100px;
+}
+
+#jumbotron {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.jumbotron-text {
+  width: 50%;
+  font-size: 2em;
+  text-align: justify;
+}
+
+.adopt-img {
+  width: 50%;
+  height: 500px;
+}
+
+.dark {
+  background-color: #0aa1dd;
+  padding: 50px 0;
+  color: #fff;
+}
+
+.light {
+  background-color: #e8f9fd;
+  padding: 50px 0;
+  color: #000;
+}
+
+.fitur-list {
+  display: flex;
+  justify-content: center;
+  padding: 250px 0;
+}
+
+.fitur-item {
+  text-align: center;
+  margin: 0px 25px;
+  font-size: 1.5em;
+}
+
+.fa-solid {
+  font-size: 3em;
+}
+
+.fitur-heading {
+  padding: 20px 0;
+}
+
+.big-heading {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 50px;
+}
+
+.testimoni-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+
+.testimoni-list {
+  display: flex;
+}
+
+.testimoni-heading {
+  padding: 20px 0;
+}
+
+.testimoni-item {
+  text-align: center;
+  margin: 0px auto;
+  padding: 30px;
+  font-size: 1.5em;
+  border: 2px solid #0aa1dd;
+  border-radius: 20px;
+  width: 25%;
+  background-color: #e8f9fd;
+  color: #000;
+}
+
+#testimoni {
+  padding: 100px 0;
+}
+
+.profile {
+  border: 1px solid #e8f9fd;
+  text-align: center;
+  width: 25%;
+  margin: 0px auto;
+  padding: 30px;
+  background-color: #0aa1dd;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.table-desc {
+  margin: 20px auto;
+  text-align: justify;
+}
+
+#aside {
+  padding: 100px 0;
+}
+
+.button:hover {
+  background-color: #097dab;
+}
+
+.button {
+  background-color: #0aa1dd;
+  color: #fff;
+  border: 2px solid #e8f9fd;
+  border-radius: 20px;
+  width: 120px;
+  font-weight: 900;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.profile:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.654);
+  transform: scale(1.02);
+}
+
+.testimoni-item:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.654);
+  transform: scale(1.02);
+}
+
+.footer {
+  text-align: center;
+  color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+  #jumbotron {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .fitur-list {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .testimoni-list {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .testimoni-item {
+    width: 50%;
+  }
+
+  .jumbotron-text {
+    width: 80%;
+    font-size: 2em;
+    text-align: left;
+  }
+
+  .profile {
+    width: 50%;
+  }
+}
